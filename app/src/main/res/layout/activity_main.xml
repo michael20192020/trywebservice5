@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titletextview"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="webservice example"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/querybutton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="query"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantityEditText" />
+
+    <TextView
+        android:id="@+id/resulttextview"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionButton" />
+
+    <Button
+        android:id="@+id/insertbutton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="insert"
+        app:layout_constraintStart_toEndOf="@+id/querybutton"
+        app:layout_constraintTop_toBottomOf="@+id/quantityEditText" />
+
+    <Button
+        android:id="@+id/updatebutton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/querybutton" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="delete"
+        app:layout_constraintStart_toEndOf="@+id/updatebutton"
+        app:layout_constraintTop_toBottomOf="@+id/insertbutton" />
+
+    <EditText
+        android:id="@+id/connoteEditText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="connote number"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titletextview" />
+
+    <EditText
+        android:id="@+id/driverEditText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="driver name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/runEditText" />
+
+    <EditText
+        android:id="@+id/runEditText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="run number"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connoteEditText" />
+
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="quantity"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driverEditText" />
+
+    <Button
+        android:id="@+id/signInsertButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Insert Sign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updatebutton" />
+
+    <Button
+        android:id="@+id/signUpdateButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Update Sign"
+        app:layout_constraintStart_toEndOf="@+id/signInsertButton"
+        app:layout_constraintTop_toBottomOf="@+id/deletebutton" />
+
+    <Button
+        android:id="@+id/atlInsertButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Insert ATL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInsertButton" />
+
+    <Button
+        android:id="@+id/atlUpdateButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Update ATL"
+        app:layout_constraintStart_toEndOf="@+id/atlInsertButton"
+        app:layout_constraintTop_toBottomOf="@+id/signUpdateButton" />
+
+    <Button
+        android:id="@+id/failInsertButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Insert Fail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atlInsertButton" />
+
+    <Button
+        android:id="@+id/failUpdateButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Update Fail"
+        app:layout_constraintStart_toEndOf="@+id/failInsertButton"
+        app:layout_constraintTop_toBottomOf="@+id/atlUpdateButton" />
+
+    <Button
+        android:id="@+id/pickupInsertButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Insert Pickup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/failInsertButton" />
+
+    <Button
+        android:id="@+id/pickupUpdateButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Update Pickup"
+        app:layout_constraintStart_toEndOf="@+id/pickupInsertButton"
+        app:layout_constraintTop_toBottomOf="@+id/failUpdateButton" />
+
+    <Button
+        android:id="@+id/instructionButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickupInsertButton" />
+
+    <Button
+        android:id="@+id/feedbackButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/instructionButton"
+        app:layout_constraintTop_toBottomOf="@+id/pickupUpdateButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
